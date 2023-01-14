@@ -8,7 +8,7 @@ intents.members = True
 
 client = commands.Bot(command_prefix=';', intents=intents)
 
-cluster = MongoClient('mongodb+srv://sn1ch:E0pVjmZtYQIZylu3@cluster0.oslxn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+cluster = MongoClient('')
 collusers = cluster.wgbot.users
 
 @client.event
