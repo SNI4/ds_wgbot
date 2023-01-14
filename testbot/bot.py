@@ -43,4 +43,4 @@ async def ping(ctx):
 	await asyncio.sleep(0.8)
 	await mes.edit(content=f'i think latency is {round(client.latency*1000)} ms')
 
-client.run('OTQ3OTU4NzExMTc4MTMzNTE0.Yh01WA.7yh14e9pbiCQ5SD6QpxP-UdjjX4')
+client.run('')
