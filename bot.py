@@ -1,5 +1,6 @@
 import discord, os, random, asyncio, win10toast
 from discord.ext import commands, tasks
+from environs import Env
 
 
 
@@ -10,7 +11,10 @@ client = commands.Bot(command_prefix = ',', intents=intents)
 
 
 
-TOKEN = ('NzE1MTMzNjg0MTg0Nzc2NzA0.Xs4yJA.ysE_I-rq07GhMzZHfnS4kbqjNws')
+env = Env()
+env.read_env()
+
+TOKEN = env.str("DSBOT_TOKEN")
 GUILD = ('𝐖𝐀𝐍𝐓𝐈𝐀𝐆𝐎𝐎 𝐇𝐎𝐔𝐒𝐄')
 
 
