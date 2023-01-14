@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 from pymongo import MongoClient
 
-cluster = MongoClient('mongodb+srv://sn1ch:E0pVjmZtYQIZylu3@cluster0.oslxn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+cluster = MongoClient('')
 collusers = cluster.wgbot.users
 collservers = cluster.wgbot.servers
 
